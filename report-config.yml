@@ -1,0 +1,59 @@
+# Message to be sent to people with the permission coralreports.notify
+report-notification: '&3&L{reported-player}&f has been reported by &3&L{reporter}&f
+  for &3&L{reason}'
+# Message sent to the reporter.
+report-message: '&3&LYou&f have reported &3&L{reported-player} &ffor &3&L{reason}'
+# Message sent when report gets removed.
+remove-notification: '&fReport for&3&L {reported-player} &fhas been&3&l removed.'
+# Message sent for when all reports get removed for a certain player.
+removeall-notification: '&fAll reports for&3&L {reported-player} &fhave been&3&l removed.'
+# Message sent when teleporting using the reports gui.
+teleport-notification: '&3&LYou&f have been teleported to&3&L {reported-player}'
+# Cooldown message sent to player when he/she is on /report cooldown. {timer} will be replaced with the time left in seconds.
+cooldown-message: '&c(!) You have to wait {timer} seconds before reporting again!'
+# Message sent when player doesnt have permission.
+denied-permission: '&c(!) You do not have permission for this command!'
+# This command will be executed using the report manager. The command must be executable on a player.
+punish-command: /ban
+# The cooldown time in seconds.
+cooldown: 10
+# The inventory size for the group inventory.
+group-size: 9
+# The inventory size for the types inventory.
+types-size: 9
+group:
+  Hack:
+    name: '&cHacking'
+    item: diamond_sword
+    slot: 0
+    types:
+      Killaura:
+        name: '&9Killaura'
+        item: stone_sword
+        slot: 0
+      Anti-Knockback:
+        name: '&dAnti-Knockback'
+        item: iron_leggings
+        slot: 1
+      Speed:
+        name: '&aSpeed'
+        item: diamond_boots
+        slot: 2
+  Chat:
+    name: '&aChat'
+    item: paper
+    slot: 1
+    types:
+      Swearing:
+        name: '&cSwearing'
+        item: paper
+        slot: 0
+      Racism:
+        name: '&cRacism'
+        item: book
+        slot: 1
+  Other:
+    name: '&9Other'
+    item: lava_bucket
+    slot: 2
+        
